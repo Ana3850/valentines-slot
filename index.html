@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Acces restricționat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="age-page">
+
+  <div class="age-box">
+    <h1>🔞 Acces restricționat</h1>
+    <p>Acest joc este destinat persoanelor peste 18 ani.</p>
+
+    <div class="age-buttons">
+      <button class="spin-btn" onclick="enterGame()">DA, AM PESTE 18 ANI</button>
+      <button class="spin-btn secondary" onclick="exitGame()">NU</button>
+    </div>
+  </div>
+
+  <script>
+    function enterGame() {
+      window.location.href = "slot.html";
+    }
+
+    function exitGame() {
+      alert("Hai mă, mă iei la mișto?🙂");
+    }
+  </script>
+
+</body>
+</html>
+

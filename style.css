@@ -1,0 +1,168 @@
+/* 🔞 AGE GATE */
+
+.age-page {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-box {
+  background: #0f0f0f;
+  border-radius: 30px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(255,105,180,0.6);
+  max-width: 500px;
+}
+
+.age-box h1 {
+  color: hotpink;
+  margin-bottom: 20px;
+}
+
+.age-box p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.age-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.secondary {
+  background: #333 !important;
+  color: #ccc !important;
+}
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.title {
+  margin-top: 20px;
+  color: hotpink;
+  text-shadow: 0 0 15px hotpink;
+}
+
+.credits-panel {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ffb6c1;
+}
+
+.slot-frame {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(145deg, #111, #000);
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(255,105,180,0.6);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  background: #0f0f0f;
+  border-radius: 20px;
+  border: 3px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell img {
+  width: 75px;
+  height: 75px;
+  filter: invert(1);
+}
+
+.middle {
+  border-color: hotpink;
+}
+
+.spin-area {
+  margin-top: 30px;
+}
+
+.spin-btn {
+  padding: 18px 60px;
+  font-size: 26px;
+  font-weight: bold;
+  background: linear-gradient(145deg, #ff5fa2, #ff2f7d);
+  color: #111;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(255,105,180,0.7);
+}
+
+.spin-btn:active {
+  transform: scale(0.95);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.jackpot-text {
+  font-size: 36px;
+  animation: pulse 1s infinite;
+}
+
+.win-line {
+  filter: invert(1) drop-shadow(0 0 15px hotpink);
+  animation: winGlow 1s infinite;
+}
+
+@keyframes winGlow {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* JACKPOT + CLAIM */
+
+.jackpot-label {
+  display: none;
+  margin-top: 20px;
+  font-size: 42px;
+  font-weight: bold;
+  color: hotpink;
+  text-shadow: 0 0 25px hotpink;
+  animation: pulse 1s infinite;
+}
+
+.claim-btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(145deg, #ff5fa2, #ff2f7d);
+  color: #111;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 0 25px rgba(255,105,180,0.8);
+}
